@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.logo-container {
+    text-align: center;
+    background-color:#fae1cf;
+    }
+.logo-img {
+    width:400px;
+    height: 200px;
+}
+
+#bienvenida-img {
+width: 100%;
+}
+.menu {
+    background-color:pink;
+}
+
+.list-links {
+    list-style-type:none ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family:'Hammersmith One', Verdana, Tahoma, sans-serif;
+
+}
+
+.link {
+    text-decoration: none;
+    color:#824227;
+    font-size: clamp(16px, 8vw,32px);
+}
+
+/* Bienvenida*/
+.welcome {
+    background-color:ivory;
+    color: brown;
+    font-family:'Arsenal ital', Verdana, Tahoma, sans-serif;
+    font-size: clamp(16px, 8vw,32px);
+    text-align:center;
+    display: flex; 
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 8px;
+}
+.img-welcome{
+    margin-top: 16px;
+}
+
+/*Productos*/
+.products {
+    font-family:'Arsenal ital', Verdana, Tahoma, sans-serif;
+}
+.tit-prod {
+    text-align:center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: clamp(16px, 8vw,32px);
+    color: brown;
+}
+
+.prod-container {
+   display: flex; 
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.prod-item {
+    border: 2px solid indianred;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 16px;
+}
+.item-tit {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: crimson;
+}
+.imagen-card {
+    width: 240px;
+    height: 240px;
+    margin: 6%;
+}
+.price {
+    font-size:24px ;
+    font-weight: bolder;
+    margin: 8px 0;
+    color: crimson;
+}
+.off {
+    color:hotpink;
+}
+.description {
+    width: 280px;
+    margin-bottom: 8px;
+    color: brown;
+}
+.button {
+    text-align: center;
+}
+.b-add {
+    background-color: lightcoral;
+    color:ivory ;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.b-add:hover {
+   background-color: crimson;
+    font-size: 28px;
+}
+
+/*Formulario*/
+.contact {
+    background-color:ivory;
+    color:lightcoral;
+    margin-top: 16px;
+}
+
+.tit-contact {
+    font-size: clamp (32px, 8vw, 64px);
+    text-align: center;
+}
+.subtit-contact {
+    font-size:clamp (16px, 8vw, 24px);
+    text-align: center;
+    font-family: 'Hammersmith One', Verdana, Tahoma, sans-serif;
+}
+.form-container {
+    text-align: center;
+    margin: 32px;
+}
+.formulario {
+    background-color: ivory;
+    font-size: 16px;
+    border: 2px solid crimson;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+}
+input[type=text], [type=email],textarea {
+   color: crimson;
+   border: none;
+   font-size: 16px;
+   font-family: 'Hammersmith One', Verdana, Tahoma, sans-serif;
+}
+input[type=text] {
+    margin: 32px;
+    border-bottom: 1px solid crimson;
+    font-family: 'Hammersmith One', Verdana, Tahoma, sans-serif;
+}
+input[type=email] {
+    margin: 32px;
+    border-bottom: 1px solid crimson;
+    font-family: 'Hammersmith One', Verdana, Tahoma, sans-serif;
+}
+.mensaje {
+    margin-bottom: 32px;
+    border-bottom: 1px solid crimson;
+    font-family: 'Hammersmith One', Verdana, Tahoma, sans-serif;
+    padding: 4px;
+}
+.b-send {
+    margin-left: 24px;
+    margin-bottom: 32px;
+    padding: 8px;
+    background-color:indianred;
+    color: ivory;
+    font-size: 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.b-send:hover {
+    background-color: crimson;
+}
+.footer {
+    background-color: pink;
+    color: crimson;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-links{
+    width: 25%;
+}
+.footer-map {
+    width: 50%;
+}
+.footer-redes {
+   width: 25%; 
+}
+
+
+@media only screen and (max-width: 720px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
